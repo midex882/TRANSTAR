@@ -29,6 +29,7 @@
             box-sizing: border-box;
             flex-direction: column;
             align-items: center;
+  
         }
         header{
             background-color: black;
@@ -42,8 +43,20 @@
             flex-wrap: wrap;
             width: 100%;
         }
-        .logo{
-            width:100%;
+        .complete_logo{
+            display: flex;
+            font-family: 'gothic';
+            color: #c3b375;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .complete_logo a{
+            width: 20%;
+            
+            
+        }
+        .complete_logo img{
+            width:75%;
             
         }
         nav{
@@ -53,26 +66,28 @@
             margin-right: 6%;
             flex-wrap: wrap;
         }
-        a{
+        nav a{
             font-family: 'gothic';
             text-decoration: none;
-            color: #c7b46b;
+            color: transparent;
+            background-image: linear-gradient(
+                to right,
+                #b69245 0,
+                #cb9b51 22%, 
+                #f6e27a 45%,
+                #f6f2c0 50%,
+                #f6e27a 55%,
+                #cb9b51 78%,
+                #b69245 100%
+                );
             font-size: 2rem;
-            text-shadow:
-            -1px -1px 0 ,
-            1px -1px 0 #491e1e,
-            -1px 1px 0 #491e1e,
-            1px 1px 0 #491e1e,  
-            -2px 0 0 #491e1e,
-            2px 0 0 #491e1e,
-            0 2px 0 #491e1e,
-            0 -2px 0 #491e1e; 
+            -webkit-background-clip:text;
             margin-right: 2rem;
             min-width: 60px;
 
             
         }
-        a:hover{
+        nav a:hover{
             color: transparent;
             background-image: linear-gradient(
                 to right,
@@ -87,31 +102,6 @@
             -webkit-background-clip:text;
             text-shadow: none;
         }
-        .logo_container{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 40%;
-        }
-        .complete_logo{
-            display: flex;
-            font-family: 'gothic';
-            color: #c3b375;
-            align-items: center;
-            justify-content: flex-start;
-        }
-        .complete_logo a{
-            width: 20%;
-            margin-right: 1rem;
-            
-        }
-        #confidencial{
-            color: black;
-            text-shadow: none;
-        }
-        #confidencial:hover{
-            color: #4f0202;
-        }
         #talos_fixed{
             margin-top: 20rem;
             width: 25%;
@@ -122,15 +112,9 @@
         main{
             display: flex;
             justify-content: center;
-        }
-        #main{
-            display: flex;
-            justify-content: center;
             width: 80%;
             flex-direction: column;
             align-items: center;
-
-
         }
         .fila{
             display: flex;
@@ -197,37 +181,51 @@
         #SECTION_A{
             background-color: rgba(58, 58, 58, 0.466);
         }
-        @media (min-width: 576px ) and (max-width: 1200px)
+        @media (min-width: 576px) and (max-width: 1200px)
         {
-            header{
-                height: 10%;
+            body{
+                width: 100%;
+                margin: 0px;
             }
-            #main{
+            main{
                 width: 100%;
             }
             header{
                 justify-content: center;
-                
+                flex-wrap: wrap;
+                padding: 1rem;
             }
             nav{
                 margin-right: 0px;
             }
-            nav a{
-                margin: 0px 0.5rem;
-                text-align: center;
+            a{
+                margin: 0.5rem;
             }
-            p img{
-                width: 45%;
+            .complete_logo{
+                justify-content: center;
             }
         }
-        @media  (max-width: 576px)
+        @media (max-width: 576px)
         {
             body{
-                position: absolute;
                 width: 100%;
             }
-            #main{
+            main{
                 width: 100%;
+            }
+            header{
+                justify-content: center;
+                flex-wrap: wrap;
+                padding: 1rem;
+            }
+            nav{
+                margin-right: 0px;
+            }
+            a{
+                margin: 0.5rem;
+            }
+            .complete_logo{
+                justify-content: center;
             }
             .fila{
                 flex-wrap: wrap;
@@ -235,34 +233,13 @@
             .el{
                 width: 100%;
             }
-            .el p img{
-                width: 40%;
-            }
-            header{
-                justify-content: center;       
-            }
-            nav{
-                margin-right: 0px;
-            }
-            nav a{
-                margin: 0px 0.5rem;
-                text-align: center;
-            }
-            p img{
-                width: 45%;
-            }
         }
     </style>
 </head>
 
     <header>
-            <div class="logo_container">
-                <div class="complete_logo">
-                    <a href="index.html" ><img src="img/logo.png" alt="" class="logo"></a>
-                    <h2>TRANSTAR</h2>
-                </div>
-                
-                <a href="" id="confidencial">CONFIDENCIAL</a>
+            <div class="complete_logo">
+                <a href="index.html" ><img src="img/logo.png" alt="" class="logo"></a>
             </div>
             <nav>
                 <a href="">SECCIONES</a>
@@ -270,10 +247,10 @@
                 <a href="">INSTALACIONES</a>
             </nav>
     </header>
-<body>
+    <body>
+        <img src="img/talos_one.png" id="talos_fixed" alt="">
         <main>
-            <img src="img/talos_one.png" id="talos_fixed" alt="">
-            <div id="main">
+            
                 <div id="SECTION_A">
                     <div class="fila">
                         <div class="el">
@@ -356,9 +333,7 @@
                         </div>
                     
                     </div>
-                </div> 
-                
-            </div>
+                </div>                 
         </main>
     </body>
 </html>
