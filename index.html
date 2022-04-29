@@ -21,7 +21,7 @@
             src: url("fonts/TALOS___.TTF");
         }
         body{
-            width: 100%;
+            width: 100vw;
             display: flex;
             margin: 0px;
             background-image: url('img/background2.jpg');
@@ -49,21 +49,19 @@
             color: #c3b375;
             align-items: center;
             justify-content: flex-start;
+            width: fit-content;
         }
         .complete_logo a{
             width: 20%;
-            
-            
         }
         .complete_logo img{
-            width:75%;
-            
+            width:75%;  
         }
         nav{
             display: flex;
             justify-content: space-around;
             align-items: center;
-            margin-right: 6%;
+            margin-right: 5rem;
             flex-wrap: wrap;
         }
         nav a{
@@ -118,6 +116,9 @@
         }
         .fila{
             display: flex;
+        }
+        .texto{
+            height: 90%;
         }
         .el{
             width: 50%;
@@ -193,16 +194,22 @@
             header{
                 justify-content: center;
                 flex-wrap: wrap;
-                padding: 1rem;
+                padding: 1rem 0px;
             }
             nav{
                 margin-right: 0px;
             }
             a{
+                margin-right: 0px;
+                display: flex;
+                justify-content: center;
                 margin: 0.5rem;
             }
             .complete_logo{
                 justify-content: center;
+            }
+            .texto{
+                height: 100%;
             }
         }
         @media (max-width: 576px)
@@ -217,13 +224,15 @@
             header{
                 justify-content: center;
                 flex-wrap: wrap;
-                padding: 1rem;
+                padding: 1rem 0px;
             }
             nav{
                 margin-right: 0px;
             }
             a{
+                display: flex;
                 margin: 0.5rem;
+                justify-content: center;
             }
             .complete_logo{
                 justify-content: center;
@@ -233,6 +242,9 @@
             }
             .el{
                 width: 100%;
+            }
+            .texto{
+                height: 90%;
             }
         }
     </style>
@@ -256,80 +268,91 @@
                     <div class="fila">
                         <div class="el">
                             <h2>PSICOTRÓNICA</h2>
-                            <p>
-                                <img src="img/psychotronics.gif" alt="">
-                                Psicotrónica es la sección que más avances está aportando en el campo de la psicología, la psiquiatría
-                                y todo lo relacionado con la mente humana. A través del uso de ondas REM, conseguimos desentrañar los
-                                secretos de la mente humana que hasta ahora habían permanecido ocultos a nuestros ojos. ¿Quién sabe lo
-                                que deparará el futuro? Acompáñanos y descubrámoslo ¡Juntos!.
-                                <br>
-                                <br>
-                                El origen de esta sección se haya en el año 1958, en el incidente Vorona-1, un esfuerzo conjunto de la URSS
-                                y EEUU. Mientras el astronauta Michael Scott y el cosmonauta Mikhail Kalashnikiv realizaban reparaciones en
-                                el módulo, Scott fue atacado por una fuerza psicoestelar a la que denominamos "el desconocido". Al parecer,
-                                es totalmente inofensivo para los habitantes de la Tierra residentes dentro del campo magnético, es decir, 
-                                cualquiera en la superficie. Sin embargo, su influencia puede ser perjudicial para aquellos en la órbita y
-                                más allá, de manera que permanecemos investigando para entender más a esta fuerza y a nosotros mismos.
-                            </p>
+                            <div class="texto">
+                                <p>
+                                    <img src="img/psychotronics.gif" alt="">
+                                    Psicotrónica es la sección que más avances está aportando en el campo de la psicología, la psiquiatría
+                                    y todo lo relacionado con la mente humana. A través del uso de ondas REM, conseguimos desentrañar los
+                                    secretos de la mente humana que hasta ahora habían permanecido ocultos a nuestros ojos. ¿Quién sabe lo
+                                    que deparará el futuro? Acompáñanos y descubrámoslo ¡Juntos!.
+                                    <br>
+                                    <br>
+                                    El origen de esta sección se haya en el año 1958, en el incidente Vorona-1, un esfuerzo conjunto de la URSS
+                                    y EEUU. Mientras el astronauta Michael Scott y el cosmonauta Mikhail Kalashnikiv realizaban reparaciones en
+                                    el módulo, Scott fue atacado por una fuerza psicoestelar a la que denominamos "el desconocido". Al parecer,
+                                    es totalmente inofensivo para los habitantes de la Tierra residentes dentro del campo magnético, es decir, 
+                                    cualquiera en la superficie. Sin embargo, su influencia puede ser perjudicial para aquellos en la órbita y
+                                    más allá, de manera que permanecemos investigando para entender más a esta fuerza y a nosotros mismos.
+                                </p>
+                            </div>
+                            
                             <button>Descubre más</button>
                         </div>
                         <div class="el">
                             <h2>NEUROMODS</h2>
-                            <p>
-                                <img src="img/neuromods.gif" alt="">
-                                Psicotrónica es la sección que más avances está aportando en el campo de la psicología, la psiquiatría
-                                y todo lo relacionado con la mente humana. A través del uso de ondas REM, conseguimos desentrañar los
-                                secretos de la mente humana que hasta ahora habían permanecido ocultos a nuestros ojos. ¿Quién sabe lo
-                                que deparará el futuro? Acompáñanos y descubrámoslo ¡Juntos!.
-                                <br>
-                                <br>
-                                El origen de esta sección se haya en el año 1958, en el incidente Vorona-1, un esfuerzo conjunto de la URSS
-                                y EEUU. Mientras el astronauta Michael Scott y el cosmonauta Mikhail Kalashnikiv realizaban reparaciones en
-                                el módulo, Scott fue atacado por una fuerza psicoestelar a la que denominamos "el desconocido". Al parecer,
-                                es totalmente inofensivo para los habitantes de la Tierra residentes dentro del campo magnético, es decir, 
-                                cualquiera en la superficie. Sin embargo, su influencia puede ser perjudicial para aquellos en la órbita y
-                                más allá, de manera que permanecemos investigando para entender más a esta fuerza y a nosotros mismos.
-                            </p>
+                            <div class="texto">
+                                <p>
+                                    <img src="img/neuromods.gif" alt="">
+                                    Psicotrónica es la sección que más avances está aportando en el campo de la psicología, la psiquiatría
+                                    y todo lo relacionado con la mente humana. A través del uso de ondas REM, conseguimos desentrañar los
+                                    secretos de la mente humana que hasta ahora habían permanecido ocultos a nuestros ojos. ¿Quién sabe lo
+                                    que deparará el futuro? Acompáñanos y descubrámoslo ¡Juntos!.
+                                    <br>
+                                    <br>
+                                    El origen de esta sección se haya en el año 1958, en el incidente Vorona-1, un esfuerzo conjunto de la URSS
+                                    y EEUU. Mientras el astronauta Michael Scott y el cosmonauta Mikhail Kalashnikiv realizaban reparaciones en
+                                    el módulo, Scott fue atacado por una fuerza psicoestelar a la que denominamos "el desconocido". Al parecer,
+                                    es totalmente inofensivo para los habitantes de la Tierra residentes dentro del campo magnético, es decir, 
+                                    cualquiera en la superficie. Sin embargo, su influencia puede ser perjudicial para aquellos en la órbita y
+                                    más allá, de manera que permanecemos investigando para entender más a esta fuerza y a nosotros mismos.
+                                </p>
+                            </div>
+                            
                             <button>Descubre más</button>
                         </div>
                     </div>
                     <div class="fila">
                         <div class="el">
                             <h2>HARDWARE</h2>
-                            <p>
-                                <img src="img/hardware.gif" alt="">
-                                Psicotrónica es la sección que más avances está aportando en el campo de la psicología, la psiquiatría
-                                y todo lo relacionado con la mente humana. A través del uso de ondas REM, conseguimos desentrañar los
-                                secretos de la mente humana que hasta ahora habían permanecido ocultos a nuestros ojos. ¿Quién sabe lo
-                                que deparará el futuro? Acompáñanos y descubrámoslo ¡Juntos!.
-                                <br>
-                                <br>
-                                El origen de esta sección se haya en el año 1958, en el incidente Vorona-1, un esfuerzo conjunto de la URSS
-                                y EEUU. Mientras el astronauta Michael Scott y el cosmonauta Mikhail Kalashnikiv realizaban reparaciones en
-                                el módulo, Scott fue atacado por una fuerza psicoestelar a la que denominamos "el desconocido". Al parecer,
-                                es totalmente inofensivo para los habitantes de la Tierra residentes dentro del campo magnético, es decir, 
-                                cualquiera en la superficie. Sin embargo, su influencia puede ser perjudicial para aquellos en la órbita y
-                                más allá, de manera que permanecemos investigando para entender más a esta fuerza y a nosotros mismos.
-                            </p>
+                            <div class="texto">
+                                <p>
+                                    <img src="img/hardware.gif" alt="">
+                                    Esta sección se encarga del desarrollo y construcción de todo el equipo que necesita la instalación, además de
+                                    la investigación de nuevas herramientas como el equipo de propulsión Artrax o la carga de reciclaje, que han demostrado
+                                    
+                                    <br>
+                                    <br>
+                                    El origen de esta sección se haya en el año 1958, en el incidente Vorona-1, un esfuerzo conjunto de la URSS
+                                    y EEUU. Mientras el astronauta Michael Scott y el cosmonauta Mikhail Kalashnikiv realizaban reparaciones en
+                                    el módulo, Scott fue atacado por una fuerza psicoestelar a la que denominamos "el desconocido". Al parecer,
+                                    es totalmente inofensivo para los habitantes de la Tierra residentes dentro del campo magnético, es decir, 
+                                    cualquiera en la superficie. Sin embargo, su influencia puede ser perjudicial para aquellos en la órbita y
+                                    más allá, de manera que permanecemos investigando para entender más a esta fuerza y a nosotros mismos.
+                                </p>
+                            </div>
+                            
                             <button>Descubre más</button>
                         </div>
                         <div class="el">
                             <h2>ARBORETO</h2>
-                            <p>
-                                <img src="img/arboretum.gif" alt="">
-                                Psicotrónica es la sección que más avances está aportando en el campo de la psicología, la psiquiatría
-                                y todo lo relacionado con la mente humana. A través del uso de ondas REM, conseguimos desentrañar los
-                                secretos de la mente humana que hasta ahora habían permanecido ocultos a nuestros ojos. ¿Quién sabe lo
-                                que deparará el futuro? Acompáñanos y descubrámoslo ¡Juntos!.
-                                <br>
-                                <br>
-                                El origen de esta sección se haya en el año 1958, en el incidente Vorona-1, un esfuerzo conjunto de la URSS
-                                y EEUU. Mientras el astronauta Michael Scott y el cosmonauta Mikhail Kalashnikiv realizaban reparaciones en
-                                el módulo, Scott fue atacado por una fuerza psicoestelar a la que denominamos "el desconocido". Al parecer,
-                                es totalmente inofensivo para los habitantes de la Tierra residentes dentro del campo magnético, es decir, 
-                                cualquiera en la superficie. Sin embargo, su influencia puede ser perjudicial para aquellos en la órbita y
-                                más allá, de manera que permanecemos investigando para entender más a esta fuerza y a nosotros mismos.
-                            </p>
+                            <div class="texto">
+                                <p>
+                                    <img src="img/arboretum.gif" alt="">
+                                    Psicotrónica es la sección que más avances está aportando en el campo de la psicología, la psiquiatría
+                                    y todo lo relacionado con la mente humana. A través del uso de ondas REM, conseguimos desentrañar los
+                                    secretos de la mente humana que hasta ahora habían permanecido ocultos a nuestros ojos. ¿Quién sabe lo
+                                    que deparará el futuro? Acompáñanos y descubrámoslo ¡Juntos!.
+                                    <br>
+                                    <br>
+                                    El origen de esta sección se haya en el año 1958, en el incidente Vorona-1, un esfuerzo conjunto de la URSS
+                                    y EEUU. Mientras el astronauta Michael Scott y el cosmonauta Mikhail Kalashnikiv realizaban reparaciones en
+                                    el módulo, Scott fue atacado por una fuerza psicoestelar a la que denominamos "el desconocido". Al parecer,
+                                    es totalmente inofensivo para los habitantes de la Tierra residentes dentro del campo magnético, es decir, 
+                                    cualquiera en la superficie. Sin embargo, su influencia puede ser perjudicial para aquellos en la órbita y
+                                    más allá, de manera que permanecemos investigando para entender más a esta fuerza y a nosotros mismos.
+                                </p>
+                            </div>
+                            
                             <button>Descubre más</button>
                         </div>
                     
