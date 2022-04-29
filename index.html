@@ -35,8 +35,7 @@
             background-color: black;
             height: 10%;
             border: 12px #3f3f3f solid;
-            border-left: 0px;
-            border-right: 0px;
+            border: 12px 0px;
             padding: 0.5rem;
             display: flex;
             justify-content: space-between;
@@ -49,13 +48,13 @@
             color: #c3b375;
             align-items: center;
             justify-content: flex-start;
-            width: fit-content;
+            width: 30%
         }
         .complete_logo a{
             width: 20%;
         }
         .complete_logo img{
-            width:75%;  
+            width:110%;  
         }
         nav{
             display: flex;
@@ -179,6 +178,62 @@
             width: 25%;
             margin-left: 1rem;
         }
+        #INTRODUCTION{
+            display:flex ;
+            justify-content: center;
+            margin: 5% 0px;
+            width: 100%;
+            flex-wrap: wrap;
+            
+        }
+        #INTRODUCTION h1{
+            text-align: center;
+            color: transparent;
+            background-image: linear-gradient(
+                to right,
+                #b69245 0,
+                #cb9b51 22%, 
+                #f6e27a 45%,
+                #f6f2c0 50%,
+                #f6e27a 55%,
+                #cb9b51 78%,
+                #b69245 100%
+                );
+            font-size: 2rem;
+            -webkit-background-clip:text;
+            font-size: 5rem ;
+            font-family: 'Roboto', sans-serif;
+            margin: 0px;
+            width: 100%;
+        }
+        #INTRODUCTION h2{
+            text-align: center;
+            color: transparent;
+            background-image: linear-gradient(
+                to right,
+                #b69245 0,
+                #cb9b51 22%, 
+                #f6e27a 45%,
+                #f6f2c0 50%,
+                #f6e27a 55%,
+                #cb9b51 78%,
+                #b69245 100%
+                );
+            font-size: 2rem;
+            -webkit-background-clip:text;
+            font-size: 2rem ;
+            font-family: 'Roboto', sans-serif;
+            margin: 0px;
+            width: 100%;
+        }
+        #logo_intro{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+        #logo_intro img{
+            width: 20%;
+        }
         #SECTION_A{
             background-color: rgba(58, 58, 58, 0.466);
         }
@@ -246,6 +301,7 @@
             .texto{
                 height: 90%;
             }
+            
         }
     </style>
 </head>
@@ -263,7 +319,18 @@
     <body>
         <img src="img/talos_one.png" id="talos_fixed" alt="">
         <main>
-            
+                <div id="INTRODUCTION">
+                    <div id="logo_intro">
+                        <img src="img/logo.png" alt="">
+                        
+                    </div>
+                    <h1>
+                        TRANSTAR
+                    </h1>
+                    <h2>
+                        JUNTOS, MÁS ALLÁ DE LAS ESTRELLAS
+                    </h2>
+                </div>
                 <div id="SECTION_A">
                     <div class="fila">
                         <div class="el">
