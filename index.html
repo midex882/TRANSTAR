@@ -29,20 +29,18 @@
             box-sizing: border-box;
             flex-direction: column;
             align-items: center;
-            overflow-x: auto;
   
         }
         header{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
             background-color: black;
-            height: 10%;
             border: 12px #3f3f3f solid;
             border-right: 0px;
             border-left: 0px;
             padding: 0.5rem;
-            display: flex;
             justify-content: space-between;
-            flex-wrap: wrap;
-            width: 100%;
         }
         .complete_logo{
             display: flex;
@@ -56,7 +54,7 @@
             width: 20%;
         }
         .complete_logo img{
-            width:110%;  
+            width: 100%;
         }
         nav{
             display: flex;
@@ -114,6 +112,7 @@
             width: 80%;
             flex-direction: column;
             align-items: center;
+            background-color: rgba(58, 58, 58, 0.466);
         }
         .fila{
             display: flex;
@@ -183,28 +182,11 @@
             justify-content: center;
             width: 100%;
             flex-wrap: wrap;
+            margin: 1rem 0px;
             
         }
-        #INTRODUCTION h1{
-            text-align: center;
-            color: transparent;
-            background-image: linear-gradient(
-                to right,
-                #b69245 0,
-                #cb9b51 22%, 
-                #f6e27a 45%,
-                #f6f2c0 50%,
-                #f6e27a 55%,
-                #cb9b51 78%,
-                #b69245 100%
-                );
-            -webkit-background-clip:text;
-            font-size: 5rem;
-            font-family: 'Roboto', sans-serif;
-            margin: 0px;
-            width: 100%;
-        }
-        #INTRODUCTION h2{
+        
+        #INTRODUCTION h2,h1{
             text-align: center;
             color: transparent;
             background-image: linear-gradient(
@@ -224,6 +206,9 @@
             margin: 0px;
             width: 100%;
         }
+        h1{
+            font-size: 5rem;
+        }
         #logo_intro{
             display: flex;
             justify-content: center;
@@ -232,15 +217,25 @@
         #logo_intro img{
             width: 20%;
         }
-        #SECTION_A{
-            background-color: rgba(58, 58, 58, 0.466);
+        .SECTION{
+            width: 100%;
+            margin-bottom:8rem;
+        }
+        table{
+            margin: auto;
+            width: 80%;
+            border-collapse: collapse;
+            text-align: center;
+            font-family: 'Roboto', sans-serif; 
+            color: white;
+            background-color: #c3b37571;
+        }
+        td,th{
+            border: 2px solid white;
         }
         @media (min-width: 576px) and (max-width: 1200px)
         {
-            body{
-                width: 100%;
-                margin: 0px;
-            }
+            
             main{
                 width: 100%;
             }
@@ -266,13 +261,10 @@
         @media (max-width: 576px)
         {
             body{
-                width: 100%;
                 overflow-x: hidden ;
-                margin: 0px;
             }
             main{
                 width: 100%;
-                margin: 0px;
             }
             header{
                 justify-content: center;
@@ -313,26 +305,27 @@
             </div>
             <nav>
                 <a href="">SECCIONES</a>
-                <a href="">CONTACTO</a>
                 <a href="">INSTALACIONES</a>
+                <a href="">CONTACTO</a>                
             </nav>
     </header>
     <body>
         <img src="img/talos_one.png" id="talos_fixed" alt="">
+        <div id="INTRODUCTION">
+            <div id="logo_intro">
+                <img src="img/logo.png" alt="">
+                
+            </div>
+            <h1>
+                TRANSTAR
+            </h1>
+            <h2>
+                JUNTOS, MÁS ALLÁ DE LAS ESTRELLAS
+            </h2>
+        </div>
         <main>
-                <div id="INTRODUCTION">
-                    <div id="logo_intro">
-                        <img src="img/logo.png" alt="">
-                        
-                    </div>
-                    <h1>
-                        TRANSTAR
-                    </h1>
-                    <h2>
-                        JUNTOS, MÁS ALLÁ DE LAS ESTRELLAS
-                    </h2>
-                </div>
-                <div id="SECTION_A">
+                
+                <div class="SECTION">
                     <div class="fila">
                         <div class="el">
                             <h2>PSICOTRÓNICA</h2>
@@ -345,13 +338,7 @@
                                     que deparará el futuro? Acompáñanos y descubrámoslo ¡Juntos!.
                                     <br>
                                     <br>
-                                    El origen de esta sección se haya en el año 1958, en el incidente Vorona-1, un esfuerzo conjunto de la URSS
-                                    y EEUU. Mientras el astronauta Michael Scott y el cosmonauta Mikhail Kalashnikiv realizaban reparaciones en
-                                    el módulo, Scott fue atacado por una fuerza psicoestelar a la que denominamos "el desconocido". Al parecer,
-                                    es totalmente inofensivo para los habitantes de la Tierra residentes dentro del campo magnético, es decir, 
-                                    cualquiera en la superficie. Sin embargo, su influencia puede ser perjudicial para aquellos en la órbita y
-                                    más allá, de manera que permanecemos investigando para entender más a esta fuerza y a nosotros mismos.
-                                </p>
+                                    
                             </div>
                             
                             <button>Descubre más</button>
@@ -425,7 +412,120 @@
                         </div>
                     
                     </div>
-                </div>                 
+                </div> 
+                <div class="SECTION">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>INSTALACIÓN</th>
+                                <th>SECCIÓN</th>
+                                <th>INVESTIGACIONES ACTUALES</th>
+                                <th>TAMAÑO</th>
+                                <th>ACCESO</th>
+                                <th>LOCALIZACIÓN</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>LANZADERA ARGUS</td>
+                                <td>TRANSPORTE</td>
+                                <td>Eficiencia de la fusión fría</td>
+                                <td>70 km2</td>
+                                <td>
+                                    <ul>
+                                        <li>tierra</li>
+                                        <li>aire</li>
+                                    </ul>
+                                </td>
+                                <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4135654.229660278!2d-82.6359717693293!3d31.657136632560306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e0bb299cde9295%3A0x917e8e53b6d3d1a1!2sSpace%20Launch%20Complex%2040!5e0!3m2!1ses!2ses!4v1651649686886!5m2!1ses!2ses" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                            </tr>
+                            <tr>
+                                <td>COMPLEJO DE RECICLAJE</td>
+                                <td>ENERGÍAS VERDES</td>
+                                <td>Reciclaje de tejidos vivos</td>
+                                <td>30 km2</td>
+                                <td>
+                                    <ul>
+                                        <li>tierra</li>
+                                        <li>aire</li>
+                                    </ul>
+                                </td>
+                                <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d642.3291339285603!2d-79.24220912255656!3d43.79670002541444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d0e07470dc99%3A0x8a0acc5677a861e9!2sCity%20of%20Toronto%20-%20Scarborough%20Transfer%20Station%20%2F%20Drop-off%20Depot!5e1!3m2!1ses!2ses!4v1651650361001!5m2!1ses!2ses"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                            </tr>
+                            <tr>
+                                <td>HOSPITAL HIGIEA</td>
+                                <td>SANIDAD</td>
+                                <td>Regeneración de estructuras corporales</td>
+                                <td>50 km2</td>
+                                <td>
+                                    <ul>
+                                        <li>tierra</li>
+                                        <li>aire</li>
+                                        <li>mar</li>
+                                    </ul>
+                                </td>
+                                <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116480.89404184975!2d-79.89113428359373!3d43.69026850000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3a53ecf03e27%3A0x608712ee60736bec!2sWilliam%20Osler%20Health%20System%20-%20Etobicoke%20General%20Hospital!5e1!3m2!1ses!2ses!4v1651650750445!5m2!1ses!2ses"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>                
         </main>
     </body>
 </html>
