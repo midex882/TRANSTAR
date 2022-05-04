@@ -127,6 +127,7 @@
         .el h2{
             color: white;
             font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
         }
         .el button{
             margin-top: auto;
@@ -184,9 +185,8 @@
             flex-wrap: wrap;
             margin: 1rem 0px;
             
-        }
-        
-        #INTRODUCTION h2,h1{
+        }        
+        h2,h1{
             text-align: center;
             color: transparent;
             background-image: linear-gradient(
@@ -220,18 +220,44 @@
         .SECTION{
             width: 100%;
             margin-bottom:8rem;
+            text-align: center;
         }
         table{
             margin: auto;
-            width: 80%;
+            width: 90%;
             border-collapse: collapse;
             text-align: center;
             font-family: 'Roboto', sans-serif; 
-            color: white;
-            background-color: #c3b37571;
+            font-size: larger;
+            background-color: rgba(58, 58, 58, 0.555);
         }
         td,th{
-            border: 2px solid white;
+            border: 2px solid white; 
+            color: transparent;
+            background-image: linear-gradient(
+                to right,
+                #b69245 0,
+                #cb9b51 22%, 
+                #f6e27a 45%,
+                #f6f2c0 50%,
+                #f6e27a 55%,
+                #cb9b51 78%,
+                #b69245 100%
+                );
+            -webkit-background-clip:text; 
+        }
+        ul{
+            margin-right: 1rem;   
+        }
+        td>*:not(ul){
+            vertical-align: bottom;
+            object-fit:cover;
+            width: 100%;
+        }
+        .SECTION>h2{
+            margin-bottom: 2rem;
+            width: auto;
+
         }
         @media (min-width: 576px) and (max-width: 1200px)
         {
@@ -255,6 +281,10 @@
             }
             .complete_logo{
                 justify-content: center;
+            }
+            table{
+                width: 30%;
+                margin: 0px;
             }
 
         }
@@ -288,12 +318,14 @@
             .el{
                 width: 100%;
             }
-            #INTRODUCTION h1{
+            h1{
                 font-size: 2.5rem;
             }
-            #INTRODUCTION h2{
+            h2{
                 font-size: 1.5rem;
             }
+            
+
             
         }
     </style>
@@ -414,6 +446,7 @@
                     </div>
                 </div> 
                 <div class="SECTION">
+                    <h2>NUESTRAS INSTALACIONES</h2>
                     <table>
                         <thead>
                             <tr>
@@ -467,61 +500,55 @@
                                 <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116480.89404184975!2d-79.89113428359373!3d43.69026850000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3a53ecf03e27%3A0x608712ee60736bec!2sWilliam%20Osler%20Health%20System%20-%20Etobicoke%20General%20Hospital!5e1!3m2!1ses!2ses!4v1651650750445!5m2!1ses!2ses"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>BASE AÉREA HADES</td>
+                                <td>DEFENSA PLANETARIA</td>
+                                <td>CONDIFENCIAL</td>
+                                <td>40 km2</td>
+                                <td>
+                                    <ul>
+                                        <li>tierra</li>
+                                        <li>aire</li>
+                                    </ul>
+                                </td>
+                                <td><iframe id="gmap_canvas" frameborder="0" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6154.578802757732!2d47.64981063250141!3d80.80770299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3442449a7981f654!2sNagurskoye%20Air%20Base!5e1!3m2!1ses!2ses!4v1648457757845!5m2!1ses!2ses"></iframe></td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>CENTRO DE INVESTIGACIÓN NUCLEAR DE CADARACHE</td>
+                                <td>NUEVAS ENERGÍAS</td>
+                                <td>fusión fría portable</td>
+                                <td>200 km2</td>
+                                <td>
+                                    <ul>
+                                        <li>tierra</li>
+                                    </ul>
+                                </td>
+                                <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14557.987394614885!2d5.72898217181132!3d43.6990186109548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cbd4c3e11efc21%3A0xbae8e8a62ed09238!2sCommissariat%20%C3%A0%20l&#39;%C3%89nergie%20Atomique%20(Centre%20de%20Cadarache)%2C%2013115%20Saint-Paul-lez-Durance%2C%20Francia!5e1!3m2!1ses!2ses!4v1651658801008!5m2!1ses!2ses"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>COLISIONADOR EUROPEO TRANSTAR</td>
+                                <td>NUEVOS MATERIALES</td>
+                                <td>midexio, el futuro del aislamiento</td>
+                                <td>500 km2</td>
+                                <td>
+                                    <ul>
+                                        <li>aire</li>
+                                    </ul>
+                                </td>
+                                <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4645.623939899804!2d6.05685200350861!3d46.26277456752945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c63c9c18709cb%3A0xaa8a60e70dcbb4b7!2sCern%20B%C3%A2timent%20887!5e1!3m2!1ses!2ses!4v1651658979792!5m2!1ses!2ses"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
                             </tr>
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>TALOS ONE</td>
+                                <td>ESTACIÓN DE INVESTIGACIÓN MULTIDISCIPLINAR</td>
+                                <td>neuromods</td>
+                                <td>800 km2</td>
+                                <td>
+                                    <ul>
+                                        <li>vuelo orbital</li>
+                                    </ul>
+                                </td>
+                                <td><img src="img/talos.jpg" alt=""></td>
                             </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
+                            
                         </tbody>
                         
                     </table>
