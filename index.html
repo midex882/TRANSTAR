@@ -218,18 +218,27 @@
             width: 20%;
         }
         .SECTION{
-            width: 100%;
-            margin-bottom:8rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+            margin-bottom:6rem;
+            margin-top: 1rem;
             text-align: center;
+            box-sizing: border-box;
         }
         table{
-            margin: auto;
+            display: inline-block;
+            overflow: auto;
             width: 90%;
             border-collapse: collapse;
             text-align: center;
             font-family: 'Roboto', sans-serif; 
-            font-size: larger;
+            font-size: 1rem;
             background-color: rgba(58, 58, 58, 0.555);
+        }
+        #tablaMovil{
+            display: none;
         }
         td,th{
             border: 2px solid white; 
@@ -259,6 +268,33 @@
             width: auto;
 
         }
+        .SECTION:nth-of-type(3){
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            color: white;
+        }
+        .SECTION:nth-of-type(3) > div{
+            margin: 0.5rem;
+            width: 50%;
+        }
+        #motivo{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+        }
+        textarea{
+            width: 100%;
+        }
+        iframe{
+            width: 100%;
+        }
+        form{
+            text-align: left;
+            font-family: 'Roboto', sans-serif;
+            font-size: smaller;
+        }
         @media (min-width: 576px) and (max-width: 1200px)
         {
             
@@ -283,7 +319,10 @@
                 justify-content: center;
             }
             table{
-                width: 30%;
+                width: 95%;
+            }
+            #inputs > *{
+                width: 25%;
                 margin: 0px;
             }
 
@@ -324,9 +363,39 @@
             h2{
                 font-size: 1.5rem;
             }
-            
-
-            
+            #tablaMovil{
+                display: table;
+                
+            }
+            th{
+                font-size: large;
+            }
+            td{
+                color: white;
+            }
+            #tablaPC{
+                display: none;
+            }
+            .SECTION:nth-of-type(3)
+            {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+            .SECTION:nth-of-type(3) > div
+            {
+                width: 100%;
+            }
+            #inputs >div > *{
+                width: 90%;
+            }
+            form{
+                margin: auto;
+                width: 90%;
+            }
+            #iframe{
+                order: 2;
+            }  
         }
     </style>
 </head>
@@ -445,30 +514,28 @@
                     
                     </div>
                 </div> 
+                <h2>NUESTRAS INSTALACIONES</h2>
                 <div class="SECTION">
-                    <h2>NUESTRAS INSTALACIONES</h2>
-                    <table>
+                    
+                    <table id="tablaPC">
                         <thead>
                             <tr>
                                 <th>INSTALACIÓN</th>
                                 <th>SECCIÓN</th>
                                 <th>INVESTIGACIONES ACTUALES</th>
                                 <th>TAMAÑO</th>
-                                <th>ACCESO</th>
+                                <th>SITUACIÓN</th>
                                 <th>LOCALIZACIÓN</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>LANZADERA ARGUS</td>
+                                <td>PLATAFORMA ARGUS</td>
                                 <td>TRANSPORTE</td>
                                 <td>Eficiencia de la fusión fría</td>
                                 <td>70 km2</td>
                                 <td>
-                                    <ul>
-                                        <li>tierra</li>
-                                        <li>aire</li>
-                                    </ul>
+                                    TIERRA
                                 </td>
                                 <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4135654.229660278!2d-82.6359717693293!3d31.657136632560306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e0bb299cde9295%3A0x917e8e53b6d3d1a1!2sSpace%20Launch%20Complex%2040!5e0!3m2!1ses!2ses!4v1651649686886!5m2!1ses!2ses" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
                             </tr>
@@ -478,10 +545,7 @@
                                 <td>Reciclaje de tejidos vivos</td>
                                 <td>30 km2</td>
                                 <td>
-                                    <ul>
-                                        <li>tierra</li>
-                                        <li>aire</li>
-                                    </ul>
+                                    TIERRA
                                 </td>
                                 <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d642.3291339285603!2d-79.24220912255656!3d43.79670002541444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d0e07470dc99%3A0x8a0acc5677a861e9!2sCity%20of%20Toronto%20-%20Scarborough%20Transfer%20Station%20%2F%20Drop-off%20Depot!5e1!3m2!1ses!2ses!4v1651650361001!5m2!1ses!2ses"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
                             </tr>
@@ -491,11 +555,7 @@
                                 <td>Regeneración de estructuras corporales</td>
                                 <td>50 km2</td>
                                 <td>
-                                    <ul>
-                                        <li>tierra</li>
-                                        <li>aire</li>
-                                        <li>mar</li>
-                                    </ul>
+                                    TIERRA
                                 </td>
                                 <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116480.89404184975!2d-79.89113428359373!3d43.69026850000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3a53ecf03e27%3A0x608712ee60736bec!2sWilliam%20Osler%20Health%20System%20-%20Etobicoke%20General%20Hospital!5e1!3m2!1ses!2ses!4v1651650750445!5m2!1ses!2ses"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
                             </tr>
@@ -505,10 +565,7 @@
                                 <td>CONDIFENCIAL</td>
                                 <td>40 km2</td>
                                 <td>
-                                    <ul>
-                                        <li>tierra</li>
-                                        <li>aire</li>
-                                    </ul>
+                                    TIERRA
                                 </td>
                                 <td><iframe id="gmap_canvas" frameborder="0" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6154.578802757732!2d47.64981063250141!3d80.80770299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3442449a7981f654!2sNagurskoye%20Air%20Base!5e1!3m2!1ses!2ses!4v1648457757845!5m2!1ses!2ses"></iframe></td>
                             </tr>
@@ -518,9 +575,7 @@
                                 <td>fusión fría portable</td>
                                 <td>200 km2</td>
                                 <td>
-                                    <ul>
-                                        <li>tierra</li>
-                                    </ul>
+                                    TIERRA
                                 </td>
                                 <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14557.987394614885!2d5.72898217181132!3d43.6990186109548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cbd4c3e11efc21%3A0xbae8e8a62ed09238!2sCommissariat%20%C3%A0%20l&#39;%C3%89nergie%20Atomique%20(Centre%20de%20Cadarache)%2C%2013115%20Saint-Paul-lez-Durance%2C%20Francia!5e1!3m2!1ses!2ses!4v1651658801008!5m2!1ses!2ses"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
                             </tr>
@@ -530,9 +585,7 @@
                                 <td>midexio, el futuro del aislamiento</td>
                                 <td>500 km2</td>
                                 <td>
-                                    <ul>
-                                        <li>aire</li>
-                                    </ul>
+                                    TIERRA
                                 </td>
                                 <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4645.623939899804!2d6.05685200350861!3d46.26277456752945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c63c9c18709cb%3A0xaa8a60e70dcbb4b7!2sCern%20B%C3%A2timent%20887!5e1!3m2!1ses!2ses!4v1651658979792!5m2!1ses!2ses"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
                             </tr>
@@ -542,9 +595,7 @@
                                 <td>neuromods</td>
                                 <td>800 km2</td>
                                 <td>
-                                    <ul>
-                                        <li>vuelo orbital</li>
-                                    </ul>
+                                    ÓRBITA TERRESTRE
                                 </td>
                                 <td><img src="img/talos.jpg" alt=""></td>
                             </tr>
@@ -552,7 +603,166 @@
                         </tbody>
                         
                     </table>
-                </div>                
+                    <table id="tablaMovil">
+                        <tr>
+                            <th>Plataforma Argus</th>
+                        </tr>
+                        <tr>
+                            <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4135654.229660278!2d-82.6359717693293!3d31.657136632560306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e0bb299cde9295%3A0x917e8e53b6d3d1a1!2sSpace%20Launch%20Complex%2040!5e0!3m2!1ses!2ses!4v1651649686886!5m2!1ses!2ses" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        </tr>
+                        <tr>
+                            <th>Detalles</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>TRANSPORTE</li>
+                                    <li>70 km2</li>
+                                    <li>Se encuentra en la Tierra</li>
+                                </ul>
+                            </td>
+                        </tr>
+            
+                        <tr>
+                            <th>COMPLEJO DE RECICLAJE</th>
+                        </tr>
+                        <tr>
+                            <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d642.3291339285603!2d-79.24220912255656!3d43.79670002541444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d0e07470dc99%3A0x8a0acc5677a861e9!2sCity%20of%20Toronto%20-%20Scarborough%20Transfer%20Station%20%2F%20Drop-off%20Depot!5e1!3m2!1ses!2ses!4v1651650361001!5m2!1ses!2ses"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        </tr>
+                        <tr>
+                            <th>Detalles</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>ENERGÍAS VERDES</li>
+                                    <li>30 km2</li>
+                                    <li>Se encuentra en la Tierra</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Hospital Higiea</th>
+                        </tr>
+                        <tr>
+                            <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116480.89404184975!2d-79.89113428359373!3d43.69026850000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3a53ecf03e27%3A0x608712ee60736bec!2sWilliam%20Osler%20Health%20System%20-%20Etobicoke%20General%20Hospital!5e1!3m2!1ses!2ses!4v1651650750445!5m2!1ses!2ses"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        </tr>
+                        <tr>
+                            <th>Detalles</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>SANIDAD</li>
+                                    <li>50 km2</li>
+                                    <li>Se encuentra en la Tierra</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Base Aérea Hades</th>
+                        </tr>
+                        <tr>
+                            <td><iframe id="gmap_canvas" frameborder="0" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6154.578802757732!2d47.64981063250141!3d80.80770299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3442449a7981f654!2sNagurskoye%20Air%20Base!5e1!3m2!1ses!2ses!4v1648457757845!5m2!1ses!2ses"></iframe></td>
+                        </tr>
+                        <tr>
+                            <th>Detalles</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>DEFENSA PLANETARIA</li>
+                                    <li>40 km2</li>
+                                    <li>Se encuentra en la Tierra</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>IN de Cadarache</th>
+                        </tr>
+                        <tr>
+                            <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14557.987394614885!2d5.72898217181132!3d43.6990186109548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cbd4c3e11efc21%3A0xbae8e8a62ed09238!2sCommissariat%20%C3%A0%20l&#39;%C3%89nergie%20Atomique%20(Centre%20de%20Cadarache)%2C%2013115%20Saint-Paul-lez-Durance%2C%20Francia!5e1!3m2!1ses!2ses!4v1651658801008!5m2!1ses!2ses"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        </tr>
+                        <tr>
+                            <th>Detalles</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>NUEVAS ENERGÍAS</li>
+                                    <li>200 km2</li>
+                                    <li>Se encuentra en la Tierra</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Colisionador Transtar</th>
+                        </tr>
+                        <tr>
+                            <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4645.623939899804!2d6.05685200350861!3d46.26277456752945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c63c9c18709cb%3A0xaa8a60e70dcbb4b7!2sCern%20B%C3%A2timent%20887!5e1!3m2!1ses!2ses!4v1651658979792!5m2!1ses!2ses"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+                        </tr>
+                        <tr>
+                            <th>Detalles</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>NUEVOS MATERIALES</li>
+                                    <li>500 km2</li>
+                                    <li>Se encuentra en la Tierra</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>TALOS ONE</th>
+                        </tr>
+                        <tr>
+                            <td><img src="img/talos.jpg" alt=""></td>
+                        </tr>
+                        <tr>
+                            <th>Detalles</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ul>
+                                    <li>Investigación multidisciplinar</li>
+                                    <li>800 km2</li>
+                                    <li>Órbita Terrestre</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <h2>CONTACTO</h2>
+                <div class="SECTION">
+                    <div id="iframe">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8019.667152514759!2d-3.6086650000000002!3d37.198509!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe979ea48da8d9269!2sAlcampo!5e1!3m2!1ses!2ses!4v1651735739923!5m2!1ses!2ses" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div>
+                        <form action="">
+                            <div id="inputs">
+                                <div>
+                                    <label for="name">Nombre:</label>
+                                    <input type="text" name="name">
+                                </div>
+                                <div>
+                                    <label for="email">Email:</label>
+                                    <input type="email" name="email">
+                                </div>
+                                
+                            </div>
+                            
+                            <div id="motivo">
+                                <label for="textarea">Motivo del contacto:</label>
+                                <textarea name="textarea" id="" cols="30" rows="10"></textarea>
+                            </div>
+                            
+                            <input type="checkbox">
+                            <label for="checkbox">Acepto que os comáis a mi madre</label>
+                        </form>
+                    </div>
+                    
+                </div>   
         </main>
     </body>
 </html>
