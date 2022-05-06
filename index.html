@@ -8,395 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&d,wght@1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     
     <title>ÍNDICE</title>
 
     <style>
-        @font-face {
-        font-family:'gothic';
-        src: url('fonts/gothic.ttf');
-}
-        @font-face{
-            font-family: "talos";
-            src: url("fonts/TALOS___.TTF");
-        }
-        body{
-            width: 100%;
-            display: flex;
-            margin: 0px;
-            background-image: url('img/background2.jpg');
-            background-size: 70%;
-            box-sizing: border-box;
-            flex-direction: column;
-            align-items: center;
-  
-        }
-        header{
-            display: flex;
-            width: 100%;
-            flex-wrap: wrap;
-            background-color: black;
-            border: 12px #3f3f3f solid;
-            border-right: 0px;
-            border-left: 0px;
-            padding: 0.5rem;
-            justify-content: space-between;
-        }
-        .complete_logo{
-            display: flex;
-            font-family: 'gothic';
-            color: #c3b375;
-            align-items: center;
-            justify-content: flex-start;
-            width: 30%
-        }
-        .complete_logo a{
-            width: 20%;
-        }
-        .complete_logo img{
-            width: 100%;
-        }
-        nav{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin-right: 5rem;
-            flex-wrap: wrap;
-        }
-        nav a{
-            font-family: 'gothic';
-            text-decoration: none;
-            color: transparent;
-            background-image: linear-gradient(
-                to right,
-                #b69245 0,
-                #cb9b51 22%, 
-                #f6e27a 45%,
-                #f6f2c0 50%,
-                #f6e27a 55%,
-                #cb9b51 78%,
-                #b69245 100%
-                );
-            font-size: 2rem;
-            -webkit-background-clip:text;
-            margin: 1rem;
-            min-width: 60px;
-
-            
-        }
-        nav a:hover{
-            color: transparent;
-            background-image: linear-gradient(
-                to right,
-                #6b3936 0,
-                #cb9b51 22%, 
-                #f6e27a 45%,
-                #f6f2c0 50%,
-                #f6e27a 55%,
-                #cb9b51 78%,
-                #6b3936 100%
-                );
-            -webkit-background-clip:text;
-            text-shadow: none;
-        }
-        #talos_fixed{
-            margin-top: 20rem;
-            width: 25%;
-            position: fixed;
-            left: auto;
-            z-index: -1;
-        }
-        main{
-            display: flex;
-            justify-content: center;
-            width: 80%;
-            flex-direction: column;
-            align-items: center;
-            background-color: rgba(58, 58, 58, 0.466);
-        }
-        .fila{
-            display: flex;
-        }
-        .el{
-            width: 50%;
-            margin: 1rem;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .el h2{
-            color: white;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.5rem;
-        }
-        .el button{
-            margin-top: auto;
-            width: 100%;
-            padding: 0.5rem;
-            background-color: #3f3f3f;
-            color: white;
-            color: transparent;
-            background-image: linear-gradient(
-                to right,
-                #6b3936 0,
-                #cb9b51 22%, 
-                #f6e27a 45%,
-                #f6f2c0 50%,
-                #f6e27a 55%,
-                #cb9b51 78%,
-                #6b3936 100%
-                );
-            -webkit-background-clip:text;
-            border: 1px white solid;
-            font-size: 1em;
-        }
-        
-        .el button:hover{
-            background-image: linear-gradient(
-                to right,
-                #b69245 0,
-                #cb9b51 22%, 
-                #f6e27a 45%,
-                #f6f2c0 50%,
-                #f6e27a 55%,
-                #cb9b51 78%,
-                #b69245 100%
-                );
-            color: black;
-            font-weight: bold;
-            -webkit-background-clip: unset;
-        }
-        p{
-            text-align: justify;
-            color: white;
-            font-family: 'Roboto', sans-serif;
-        }
-        p img{
-
-            float: right;
-            right: 0px;
-            width: 25%;
-            margin-left: 1rem;
-        }
-        #INTRODUCTION{
-            display:flex ;
-            justify-content: center;
-            width: 100%;
-            flex-wrap: wrap;
-            margin: 1rem 0px;
-            
-        }        
-        h2,h1{
-            text-align: center;
-            color: transparent;
-            background-image: linear-gradient(
-                to right,
-                #b69245 0,
-                #cb9b51 22%, 
-                #f6e27a 45%,
-                #f6f2c0 50%,
-                #f6e27a 55%,
-                #cb9b51 78%,
-                #b69245 100%
-                );
-            font-size: 2rem;
-            -webkit-background-clip:text;
-            font-size: 2rem ;
-            font-family: 'Roboto', sans-serif;
-            margin: 0px;
-            width: 100%;
-        }
-        h1{
-            font-size: 5rem;
-        }
-        #logo_intro{
-            display: flex;
-            justify-content: center;
-            width: 100%;
-        }
-        #logo_intro img{
-            width: 20%;
-        }
-        .SECTION{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 90%;
-            margin-bottom:6rem;
-            margin-top: 1rem;
-            text-align: center;
-            box-sizing: border-box;
-        }
-        table{
-            display: inline-block;
-            overflow: auto;
-            width: 90%;
-            border-collapse: collapse;
-            text-align: center;
-            font-family: 'Roboto', sans-serif; 
-            font-size: 1rem;
-            background-color: rgba(58, 58, 58, 0.555);
-        }
-        #tablaMovil{
-            display: none;
-        }
-        td,th{
-            border: 2px solid white; 
-            color: transparent;
-            background-image: linear-gradient(
-                to right,
-                #b69245 0,
-                #cb9b51 22%, 
-                #f6e27a 45%,
-                #f6f2c0 50%,
-                #f6e27a 55%,
-                #cb9b51 78%,
-                #b69245 100%
-                );
-            -webkit-background-clip:text; 
-        }
-        ul{
-            margin-right: 1rem;   
-        }
-        td>*:not(ul){
-            vertical-align: bottom;
-            object-fit:cover;
-            width: 100%;
-        }
-        .SECTION>h2{
-            margin-bottom: 2rem;
-            width: auto;
-
-        }
-        .SECTION:nth-of-type(3){
-            flex-direction: row;
-            justify-content: center;
-            align-items: flex-start;
-            color: white;
-        }
-        .SECTION:nth-of-type(3) > div{
-            margin: 0.5rem;
-            width: 50%;
-        }
-        #motivo{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            width: 100%;
-        }
-        textarea{
-            width: 100%;
-        }
-        iframe{
-            width: 100%;
-        }
-        form{
-            text-align: left;
-            font-family: 'Roboto', sans-serif;
-            font-size: smaller;
-        }
-        @media (min-width: 576px) and (max-width: 1200px)
-        {
-            
-            main{
-                width: 100%;
-            }
-            header{
-                justify-content: center;
-                flex-wrap: wrap;
-                padding: 1rem 0px;
-            }
-            nav{
-                margin-right: 0px;
-            }
-            a{
-                margin-right: 0px;
-                display: flex;
-                justify-content: center;
-                margin: 0.5rem;
-            }
-            .complete_logo{
-                justify-content: center;
-            }
-            table{
-                width: 95%;
-            }
-            #inputs > *{
-                width: 25%;
-                margin: 0px;
-            }
-
-        }
-        @media (max-width: 576px)
-        {
-            body{
-                overflow-x: hidden ;
-            }
-            main{
-                width: 100%;
-            }
-            header{
-                justify-content: center;
-                flex-wrap: wrap;
-                padding: 1rem 0px;
-            }
-            nav{
-                margin-right: 0px;
-            }
-            a{
-                display: flex;
-                margin: 0.5rem;
-                justify-content: center;
-            }
-            .complete_logo{
-                justify-content: center;
-            }
-            .fila{
-                flex-wrap: wrap;
-            }
-            .el{
-                width: 100%;
-            }
-            h1{
-                font-size: 2.5rem;
-            }
-            h2{
-                font-size: 1.5rem;
-            }
-            #tablaMovil{
-                display: table;
-                
-            }
-            th{
-                font-size: large;
-            }
-            td{
-                color: white;
-            }
-            #tablaPC{
-                display: none;
-            }
-            .SECTION:nth-of-type(3)
-            {
-                flex-direction: column;
-                align-items: center;
-                width: 100%;
-            }
-            .SECTION:nth-of-type(3) > div
-            {
-                width: 100%;
-            }
-            #inputs >div > *{
-                width: 90%;
-            }
-            form{
-                margin: auto;
-                width: 90%;
-            }
-            #iframe{
-                order: 2;
-            }  
-        }
+       
     </style>
 </head>
 
@@ -425,7 +42,7 @@
             </h2>
         </div>
         <main>
-                
+                <h2>NUESTROS DEPARTAMENTOS A BORDO DE TALOS ONE</h2>
                 <div class="SECTION">
                     <div class="fila">
                         <div class="el">
@@ -439,6 +56,12 @@
                                     que deparará el futuro? Acompáñanos y descubrámoslo ¡Juntos!.
                                     <br>
                                     <br>
+                                    El origen de esta sección se haya en el año 1958, en el incidente Vorona-1, un esfuerzo conjunto de la URSS
+                                    y EEUU. Mientras el astronauta Michael Scott y el cosmonauta Mikhail Kalashnikiv realizaban reparaciones en
+                                    el módulo, Scott fue atacado por una fuerza psicoestelar a la que denominamos "el desconocido". Al parecer,
+                                    es totalmente inofensivo para los habitantes de la Tierra residentes dentro del campo magnético, es decir, 
+                                    cualquiera en la superficie. Sin embargo, su influencia puede ser perjudicial para aquellos en la órbita y
+                                    más allá, de manera que permanecemos investigando para entender más a esta fuerza y a nosotros mismos.
                                     
                             </div>
                             
@@ -449,18 +72,15 @@
                             <div class="texto">
                                 <p>
                                     <img src="img/neuromods.gif" alt="">
-                                    Psicotrónica es la sección que más avances está aportando en el campo de la psicología, la psiquiatría
-                                    y todo lo relacionado con la mente humana. A través del uso de ondas REM, conseguimos desentrañar los
-                                    secretos de la mente humana que hasta ahora habían permanecido ocultos a nuestros ojos. ¿Quién sabe lo
-                                    que deparará el futuro? Acompáñanos y descubrámoslo ¡Juntos!.
+                                    La división de neuromods es pionera en modificación genética y medicina. Con las recientes investigaciones de
+                                    esta sección, hemos revelado algunas capacidades de la mente humana que son, simplemente, ¿asombrosas! Regeneración
+                                    de células madre, aumento de los reflejos o aprendizaje más rápido. Todo ello se encuentra en fase de desarrollo, claro,
+                                    pero nuestro equipos trabajan día y noche para traer este avance lo antes posible.
                                     <br>
                                     <br>
-                                    El origen de esta sección se haya en el año 1958, en el incidente Vorona-1, un esfuerzo conjunto de la URSS
-                                    y EEUU. Mientras el astronauta Michael Scott y el cosmonauta Mikhail Kalashnikiv realizaban reparaciones en
-                                    el módulo, Scott fue atacado por una fuerza psicoestelar a la que denominamos "el desconocido". Al parecer,
-                                    es totalmente inofensivo para los habitantes de la Tierra residentes dentro del campo magnético, es decir, 
-                                    cualquiera en la superficie. Sin embargo, su influencia puede ser perjudicial para aquellos en la órbita y
-                                    más allá, de manera que permanecemos investigando para entender más a esta fuerza y a nosotros mismos.
+                                    Nuestro objetivo con la división de neuromods es conseguir una mejor vida para todos. Imaginen un mundo donde todos tenemos
+                                    capacidades especiales dedicadas a aquello que queremos hacer. Trabajadores de la construcción con super fuerza, corredores
+                                    más rápidos y ágiles, científicos más inteligentes... Todo ello puede ser posible gracias a los neuromods.
                                 </p>
                             </div>
                             
@@ -475,15 +95,14 @@
                                     <img src="img/hardware.gif" alt="">
                                     Esta sección se encarga del desarrollo y construcción de todo el equipo que necesita la instalación, además de
                                     la investigación de nuevas herramientas como el equipo de propulsión Artrax o la carga de reciclaje, que han demostrado
-                                    
+                                    ser esenciales para la vida dentro de la TALOS ONE, y que permiten hacer algunas tareas en la Tierra muchísimo más sencillas.
+                                    Por eso, intentamos siempre conseguir los mejores resultados, y para ello siempre realizamos pruebas extensivas en todas
+                                    nuestras creaciones.                                   
                                     <br>
                                     <br>
-                                    El origen de esta sección se haya en el año 1958, en el incidente Vorona-1, un esfuerzo conjunto de la URSS
-                                    y EEUU. Mientras el astronauta Michael Scott y el cosmonauta Mikhail Kalashnikiv realizaban reparaciones en
-                                    el módulo, Scott fue atacado por una fuerza psicoestelar a la que denominamos "el desconocido". Al parecer,
-                                    es totalmente inofensivo para los habitantes de la Tierra residentes dentro del campo magnético, es decir, 
-                                    cualquiera en la superficie. Sin embargo, su influencia puede ser perjudicial para aquellos en la órbita y
-                                    más allá, de manera que permanecemos investigando para entender más a esta fuerza y a nosotros mismos.
+                                    Pese a la insaciable necesidad de herramientas de las demás secciones, Hardware nunca falla, proveyendo todo lo necesario para
+                                    el mantenimiento, defensa y la investigación a bordo de la estación. No contentos con eso, como ya hemos dicho, también llevan
+                                    a cabo sus propias investigaciones para proporcionarnos inventos asombrosos, dignos de la ciencia ficción de los 90.
                                 </p>
                             </div>
                             
@@ -494,18 +113,17 @@
                             <div class="texto">
                                 <p>
                                     <img src="img/arboretum.gif" alt="">
-                                    Psicotrónica es la sección que más avances está aportando en el campo de la psicología, la psiquiatría
-                                    y todo lo relacionado con la mente humana. A través del uso de ondas REM, conseguimos desentrañar los
-                                    secretos de la mente humana que hasta ahora habían permanecido ocultos a nuestros ojos. ¿Quién sabe lo
-                                    que deparará el futuro? Acompáñanos y descubrámoslo ¡Juntos!.
+                                    El arboreto tiende a convertirse en la sección favorita de la estación para muchos. Es una zona verde con bancos y riachuelos
+                                    para permitir a nuestros empleados disfrutar de la tranquilidad y la calma de la naturaleza en la Tierra, a 384000 kilómetros
+                                    de cualquier bosque. Para ello, nuestros botánicos expertos cuidan nuestras plantas para que sobrevivan en el hostil entorno 
+                                    que el espacio es para la vida.
                                     <br>
                                     <br>
-                                    El origen de esta sección se haya en el año 1958, en el incidente Vorona-1, un esfuerzo conjunto de la URSS
-                                    y EEUU. Mientras el astronauta Michael Scott y el cosmonauta Mikhail Kalashnikiv realizaban reparaciones en
-                                    el módulo, Scott fue atacado por una fuerza psicoestelar a la que denominamos "el desconocido". Al parecer,
-                                    es totalmente inofensivo para los habitantes de la Tierra residentes dentro del campo magnético, es decir, 
-                                    cualquiera en la superficie. Sin embargo, su influencia puede ser perjudicial para aquellos en la órbita y
-                                    más allá, de manera que permanecemos investigando para entender más a esta fuerza y a nosotros mismos.
+                                    Además, en el invernadero de la parte superior, podemos encontrar tubérculos, verduras y otras palntas comestibles que con cuidados
+                                    con mucho mimo para el posterior consumo de los habitantes y tripulantes de la estación. Modificados genéticamente, estos alimentos han
+                                    demostrado tener el potencial para mantener a quien los coma bien nutridos y fuertes durante el tiempo necesario, además de estar muy ricos.
+                                    Si desea probarlos, ocasionalmente se realizan envíos a la Tierra para su cata en algunas sedes de Transtar. Suscríbete a nuestro newsletter
+                                    para no perderte nada eso!
                                 </p>
                             </div>
                             
@@ -740,25 +358,26 @@
                     </div>
                     <div>
                         <form action="">
-                            <div id="inputs">
+                            <div id="inputs"> 
                                 <div>
                                     <label for="name">Nombre:</label>
                                     <input type="text" name="name">
-                                </div>
+                                </div>                              
                                 <div>
                                     <label for="email">Email:</label>
-                                    <input type="email" name="email">
-                                </div>
-                                
+                                    <input type="email" name="email">   
+                                </div>    
+                                                                 
                             </div>
                             
                             <div id="motivo">
                                 <label for="textarea">Motivo del contacto:</label>
-                                <textarea name="textarea" id="" cols="30" rows="10"></textarea>
+                                <textarea name="textarea" id="" rows="10"></textarea>
                             </div>
                             
                             <input type="checkbox">
                             <label for="checkbox">Acepto que os comáis a mi madre</label>
+                            <button type="submit">ENTREGAR MI ALMA</button>
                         </form>
                     </div>
                     
