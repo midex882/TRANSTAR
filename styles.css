@@ -311,6 +311,7 @@
         box-sizing: border-box;
         background-color: transparent;
         border:white 2px solid;
+        color: white;
     }
     .SECTION:nth-of-type(3) iframe{
         width: 100%;
