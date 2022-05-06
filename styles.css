@@ -315,7 +315,7 @@
     }
     .SECTION:nth-of-type(3) iframe{
         width: 100%;
-        height: 50vw;
+        height: 40vw;
     }
     form{
         text-align: left;
@@ -432,8 +432,15 @@
         }
         #iframe{
             order: 2;
+            width: 95%;
         }
         .SECTION:nth-of-type(3) iframe{
             height: 100vw;
+
+        }
+        #talos_fixed{
+
+            width: 50%;
+
         }
     }
