@@ -131,7 +131,7 @@
             #6b3936 0,
             #cb9b51 22%, 
             #f6e27a 45%,
-            #f6f2c0 50%,
+            #e7a752 50%,
             #f6e27a 55%,
             #cb9b51 78%,
             #6b3936 100%
@@ -142,24 +142,18 @@
     }
     
      button:hover{
-        background-image: linear-gradient(
-            to right,
-            #b69245 0,
-            #cb9b51 22%, 
-            #f6e27a 45%,
-            #f6f2c0 50%,
-            #f6e27a 55%,
-            #cb9b51 78%,
-            #b69245 100%
-            );
-        color: black;
+        background-image: url("img/loop-hyper2.gif");
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-size: 100%;
+        color: white;
         font-weight: bold;
         -webkit-background-clip: unset;
     }
     p{
         text-align: justify;
         color: rgb(233, 226, 221);
-        font-family: 'PT Serif', serif;
+        font-family: 'Titillium Web', sans-serif;
     }
     p img{
         float: right;
