@@ -241,6 +241,12 @@
     #tablaMovil{
         display: none;
     }
+    #B{
+        display: none;
+    }
+    #tablaPC{
+        display: none;
+    }
     thead{
         background-color: rgba(0, 0, 0, 0.5);
     }
@@ -438,6 +444,14 @@
             background-position: 200% center;
         }
     }
+
+    #grid{
+        display: grid;
+        grid-template-columns: repeat(14,1fr);
+        grid-template-rows: repeat(14,auto);
+    }
+
+
 
 
     @media (min-width: 576px) and (max-width: 1200px)
