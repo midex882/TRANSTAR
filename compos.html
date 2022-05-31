@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grid{
+        width: 100%;
+        height: 90vh;
+        display: grid;
+        grid-template-columns: repeat(15,1fr);
+        grid-template-rows: repeat(15,1fr);
+        }
+        #grid div{
+            display: flex;
+        }
+        #grid .item img{
+            width: 100%;
+            object-fit: cover;
+        }
+        
+
+        #a{
+            grid-column: 5/9;
+            grid-row: 1/16;
+        }
+        #e{
+            grid-column: 1/5;
+            grid-row: 1/4;
+        }
+        #f{
+            grid-column: 9/14;
+            grid-row: 1/14;
+        }
+        #g{
+            grid-column: 13/15;
+            grid-row: 1/13;
+        }
+
+        #b{
+            grid-column: 7/9;
+            grid-row: 5/7;
+        }
+        #c{
+            grid-column: 9/16;
+            grid-row: 7/9;
+        }
+        #d{
+            grid-column: 1/5;
+            grid-row: 4/16;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="D"></h2>
+    <div class="SECTION" id="grid">
+        <div id="a" class="item"><img src="img/talos_one.jpg" alt=""></div>
+        <div id="b" class="item"><img src="img/eel.jpg" alt=""></div>
+        <div id="c" class="item"><img src="img/outside2.jpg" alt=""></div>
+        <div id="d" class="item"><img src="img/recycle.jpg" alt=""></div>
+        <div id="e" class="item"><img src="img/vorona.jpg" alt=""></div>
+        <div id="f" class="item"><img src="img/goliath.jpg" alt=""></div>
+        <div id="g" class="item"><img src="img/outside.jpg" alt=""></div>
+    </div>
+</body>
+</html>
