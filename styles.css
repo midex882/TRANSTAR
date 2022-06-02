@@ -517,6 +517,7 @@
     #E+.SECTION{
         display: flex;
         justify-content: center;
+        overflow: auto;
     }
     #tablero{
         display: grid;
@@ -637,9 +638,7 @@
         .SECTION:nth-of-type(3) iframe{
             height: 60vw;
         }  
-        #tablero{
-            max-width: 100%;
-        }
+       
 
     }
     @media (max-width: 576px)
@@ -732,7 +731,5 @@
         #INTRODUCTION{
             margin-top: 14rem ;
         }
-        #tablero{
-            max-width: 100%;
-        }
+        
     }
